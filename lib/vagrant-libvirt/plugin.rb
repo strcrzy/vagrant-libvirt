@@ -23,7 +23,7 @@ module VagrantPlugins
         Config
       end
 
-      provider('libvirt', parallel: true) do
+      provider('libvirt', parallel: true, box_optional: true) do
         # Setup logging and i18n
         setup_logging
         setup_i18n
